@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/96b7f7e6e2.js" crossorigin="anonymous"></script>
+    <title>Figma for individuals</title>
+</head>
+<body>
+    <div class="main_content d-flex">
+        <section>
+            <div class="container formContainer_1">
+                <img src="/img/Logo.png" alt="companyLogo">
+                <div class="heading-style">
+                    <h1>For Individuals</h1>
+                </div>
+                <div class="paragraphStyled">
+                    <p>Start benefiting from the wellness experience. For companies looking on increasing productivity, and improving organization wellness.</p>
+                </div>
+            </div>
+        </section>
+        <!-- User form area -->
+        <section>
+            <div class="container formContainer_2">
+                <form id="formGroup" class="was-validated">
+                    <section>
+                        <div class="formUser">
+                            <div class="user-firstName-form">
+                                <label for="firstName">First Name</label><br>
+                                <input type="text" id="firstName" placeholder="Enter your first name" required>
+                            </div>
+                            <div class="user-lastName-form">
+                                <label for="lastName">Last Name</label><br>
+                                <input type="text" id="lastName" placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+                    </section>  
+                    <section>
+                        <div class="formUser form-adjustment">
+                            <div class="user-gender-form ">
+                                <label for="selectGender">Gender</label><br>
+                                <select name="gender" id="selectGender" required>
+                                    <option value="">Select here</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <div class="user-dob-form ">
+                                <label for="dob">Date of birth</label><br>
+                                <input type="datetime-local" id="dob" placeholder="Select here" required>
+                            </div>
+                        </div>
+                    </section>  
+                    <section>
+                        <div class="formUser form-adjustment">
+                            <div class="user-weight-form">
+                                <label for="userWeight">Weight (KG)</label><br>
+                                <input type="text" id="userWeight" placeholder="Enter Weight" required>
+                            </div>
+                            <div class="user-height-form">
+                                <label for="userHeight">Height (CM)</label><br>
+                                <input type="text" id="userHeight" placeholder="Enter height here..." required>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="user-activityLevel-form form-adjustment">
+                            <label for="activityLevel">Activity Level</label><br>
+                            <select name="activity" id="activityLevel" required>
+                                <option value=""> Select here</option>
+                                <option value="sedentary">Sedentary</option>
+                                <option value="lightly active">Lightly Active</option>
+                                <option value="moderately active">Moderately Active</option>
+                                <option value="very active">Very Active</option>
+                            </select>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="user-password-form form-adjustment">
+                            <label for="userPassword">Password</label><br>
+                            <div class="passwordFlex">
+                                <input type="password" id="userPassword" required>
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            
+                            
+                        </div>
+                    </section>
+                    <button>Register</button>
+                    <p >By clicking Register, you agree to our <span class="companyPolicyStyles">Terms of Use</span> and our <span class="companyPolicyStyles">Privacy Policy</span></p>
+                </form>
+            </div>
+        </section>   
+    </div>
+
+    
+</body>
+</html>
