@@ -16,9 +16,11 @@ body {
 }
 
 .main_content {
-    /* width: 100%; */
     margin: auto;
-    display: flex;
+    flex-wrap: wrap;
+    display: inline-flex;
+    grid-template-columns: auto ;
+    /* text-align: center; */
     gap: 200px;
     
 }
@@ -40,6 +42,8 @@ body {
 .container img {
     width: 77.33px;
     height: 77.17px;
+    position: relative;
+    right: 12px;
 
 }
 
@@ -52,9 +56,11 @@ body {
     color: #000B0A;
     letter-spacing: -0.8px;
     line-height: 50px;
+    margin-top: 15px;
+    /* padding-bottom: 20px; */
 }
 
-.paragraphStyled p {
+.paragraphStyled p, .hiddenContent {
     width: 400px;
     height: 75px;
     margin-top: 20px;
@@ -64,18 +70,26 @@ body {
     color: #737373;
 }
 
+ .hiddenContent{
+    display: none;
+    width: 300px;
+
+}
+
 
 
 .formContainer_2 {
     margin: auto;
+    width: 100%;
     max-width: 580px;
+    flex-wrap: wrap;
     height: 640px;
     padding:35px;
+
     border-radius: 6px;
     background: #FFFFFF;
     border: 1px solid none;
     box-shadow:  8px 9px 8px 9px #ecebeb;
-    
 }
 
 .user-firstName-form input, .user-lastName-form input, .user-gender-form select, .user-dob-form input, .user-weight-form input, .user-height-form input {
@@ -83,6 +97,7 @@ body {
     height: 40px;
     font-size: 15px;
     font-weight: 400;
+   
    
 
 }
@@ -166,10 +181,12 @@ label {
     }
 
     .container img {
-        width: 38.67px;
-        height: 38.58px;
+        width: 60px;
+        height: 60px;
         margin-top: 30px;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
+        position: relative;
+        
     
     }
 
@@ -179,7 +196,6 @@ label {
         max-width: 460px;
         padding-top: 10px;
         height: 275px;
-        /* position: relative; */
     }
 
     .heading-style h1{
@@ -191,35 +207,44 @@ label {
         color: #000B0A;
         letter-spacing: -0.8px;
         line-height: 29.5px;
+        /* padding-bottom: 50px; */
     }
 
-    .paragraphStyled p {
-        width: 327px;
+    .hiddenContent {
+        width: 300px;
         height: 50px;
         margin-top: 20px;
         font-weight: 400;
         font-size: 16px;
         line-height: 25px;
         color: #737373;
-        /* width: fit-content; */
+        display: block ;
     }
+
+    .paragraphStyled p{
+        display: none;
+    
+        
+    }
+    
 
     .formContainer_2 {
         margin: auto;
-        max-width: 450px;
+        max-width: 380px;
         flex-direction: column;
-        display: block;
-        height: 820px;
+        /* display: block; */
+        height: 860px;
         padding:35px;
         border-radius: 2px;
         background: #FFFFFF;
         border: 3px solid none;
         box-shadow:  0px 0px 0px 9px #ffffff;
+        margin-top: 20px;
         
     }
 
     .formUser {
-        display: block;
+        flex-direction: column;
         gap: 20px;
     }
 
